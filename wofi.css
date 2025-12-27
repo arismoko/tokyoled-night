@@ -1,4 +1,4 @@
-@define-color bg #000000;
+@define-color bg rgba(0, 0, 0, 0.7);
 @define-color fg #ffffff;
 @define-color selection #33467c;
 @define-color accent #7aa2f7;
@@ -10,7 +10,7 @@ window {
 }
 
 input {
-    background-color: @bg;
+    background-color: transparent;
     color: @fg;
     border: 1px solid @selection;
 }
@@ -22,7 +22,7 @@ input:selected {
 
 #entry {
     color: @fg;
-    background-color: @bg;
+    background-color: transparent;
     padding: 5px;
     margin: 2px;
 }
@@ -33,7 +33,7 @@ input:selected {
 }
 
 scrollbar {
-    background-color: @bg;
+    background-color: transparent;
 }
 
 scrollbar slider {
