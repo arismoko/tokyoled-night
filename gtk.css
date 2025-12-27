@@ -1,4 +1,4 @@
-    @define-color background     #000000;
+@define-color background     #000000;
     @define-color foreground     #ffffff;
     @define-color black          #000000;
     @define-color red            #f7768e;
@@ -17,7 +17,7 @@
     @define-color bright_cyan    #7dcfff;
     @define-color bright_white   #ffffff;
 
-    @define-color accent_bg_color @blue;
+    @define-color accent_bg_color @cyan;
     @define-color accent_fg_color @background;
     @define-color accent_color @cyan;
 
@@ -62,7 +62,7 @@
     @define-color theme_text_color @foreground;
     @define-color theme_bg_color @background;
     @define-color theme_base_color @black;
-    @define-color theme_selected_bg_color @blue;
+    @define-color theme_selected_bg_color @cyan;
     @define-color theme_selected_fg_color @background;
     @define-color insensitive_bg_color @background;
     @define-color insensitive_fg_color @bright_black;
@@ -71,7 +71,7 @@
     @define-color theme_unfocused_text_color @foreground;
     @define-color theme_unfocused_bg_color @background;
     @define-color theme_unfocused_base_color @black;
-    @define-color theme_unfocused_selected_bg_color @blue;
+    @define-color theme_unfocused_selected_bg_color @cyan;
     @define-color theme_unfocused_selected_fg_color @background;
     @define-color unfocused_insensitive_color @bright_black;
     @define-color unfocused_borders alpha(@foreground, 0.1);
