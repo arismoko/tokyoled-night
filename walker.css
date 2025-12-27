@@ -1,18 +1,87 @@
-@define-color selected-text #e7e9ea;
-@define-color text #71767b;
+@define-color selected-text #ffffff;
+@define-color text #ffffff;
 @define-color base #000000;
-@define-color border #e7e9ea;
-@define-color foreground #71767b;
+@define-color border #33467c;
+@define-color foreground #ffffff;
 @define-color background #000000;
+@define-color highlight #33467c;
+@define-color shadow #000000;
+@define-color accent #7aa2f7;
+@define-color hover #33467c;
+@define-color disabled #33467c;
+@define-color active #7aa2f7;
+@define-color focus #7aa2f7;
+@define-color error #f7768e;
 
-#box {
-  border-radius: 6px;
-  /* border: 1px solid lighter(@border); */ 
-  border-width: 1px;
+window .box-wrapper {
+  background: alpha(@base, 0.8);
+  padding: 8px 2px;
+  color: @text;
+  border: 1px solid @border;
+  margin: 0;
+  backdrop-filter: blur(10px);
 }
 
-#search {
-  border-radius: 6px;
-  /* background: transparent(@background); */
-  border-width: 1px;
+window .search-container,
+window .search {
+  background: transparent;
+  color: @foreground;
+  border: 1px solid alpha(@border, 0.5);
+  padding: 8px 12px;
+  margin: 4px 5px;
+  font-size: 14px;
+  font-weight: 500;
+}
+
+window .input {
+  color: @accent;
+  padding: 0;
+  font-weight: 300;
+}
+
+child {
+  padding: 0 2px;
+  background: transparent;
+  border-radius: 0;
+  border-left: 2px solid transparent;
+  transition: all 160ms ease-in-out;
+}
+
+child:hover .item-box,
+child:selected .item-box {
+  background: linear-gradient(90deg, alpha(@accent, 0.2), transparent 100%);
+  border-left: 2px solid alpha(@accent, 1);
+  transform: translateX(4px);
+  transition:
+    background 150ms cubic-bezier(0.25, 0.8, 0.25, 1),
+    transform 150ms cubic-bezier(0.25, 0.8, 0.25, 1),
+    border-left 150ms ease;
+}
+
+child:hover .item-text,
+child:selected .item-text {
+  text-shadow: 0 0 1px alpha(@accent, 0.1);
+}
+
+child,
+.item-box {
+  transition:
+    background 150ms cubic-bezier(0.25, 0.8, 0.25, 1),
+    border-left 150ms ease,
+    transform 150ms ease;
+}
+
+window .list child {
+  animation: slideIn 180ms ease-out forwards;
+}
+
+@keyframes slideIn {
+  from {
+    transform: translateX(-15px);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
 }
