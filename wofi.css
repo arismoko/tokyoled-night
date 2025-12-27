@@ -1,0 +1,46 @@
+@define-color bg #000000;
+@define-color fg #ffffff;
+@define-color selection #33467c;
+@define-color accent #7aa2f7;
+@define-color fg_bright #ffffff;
+
+window {
+    background-color: @bg;
+    border: 2px solid @accent;
+}
+
+input {
+    background-color: @bg;
+    color: @fg;
+    border: 1px solid @selection;
+}
+
+input:selected {
+    background-color: @selection;
+    color: @fg_bright;
+}
+
+#entry {
+    color: @fg;
+    background-color: @bg;
+    padding: 5px;
+    margin: 2px;
+}
+
+#entry:selected {
+    background-color: @selection;
+    color: @fg_bright;
+}
+
+scrollbar {
+    background-color: @bg;
+}
+
+scrollbar slider {
+    background-color: @selection;
+    border-radius: 5px;
+}
+
+scrollbar slider:hover {
+    background-color: @accent;
+}

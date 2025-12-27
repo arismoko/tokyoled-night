@@ -1,0 +1,46 @@
+:root {
+    --adw-accent-bg-rgb: 122, 162, 247 !important;
+    --adw-accent-fg-rgb: 0, 0, 0 !important;
+    --adw-accent-rgb: 122, 162, 247 !important;
+
+    --adw-destructive-bg-rgb: 247, 118, 142 !important;
+    --adw-destructive-fg-rgb: 255, 255, 255 !important;
+    --adw-destructive-rgb: 247, 118, 142 !important;
+
+    --adw-success-bg-rgb: 158, 206, 106 !important;
+    --adw-success-fg-rgb: 0, 0, 0 !important;
+    --adw-success-rgb: 158, 206, 106 !important;
+
+    --adw-warning-bg-rgb: 224, 175, 104 !important;
+    --adw-warning-fg-rgb: 0, 0, 0 !important;
+    --adw-warning-rgb: 224, 175, 104 !important;
+
+    --adw-error-bg-rgb: 247, 118, 142 !important;
+    --adw-error-fg-rgb: 0, 0, 0 !important;
+    --adw-error-rgb: 247, 118, 142 !important;
+
+    --adw-window-bg-rgb: 0, 0, 0 !important;
+    --adw-window-fg-rgb: 255, 255, 255 !important;
+
+    --adw-view-bg-rgb: 0, 0, 0 !important;
+    --adw-view-fg-rgb: 255, 255, 255 !important;
+
+    --adw-headerbar-bg-rgb: 0, 0, 0 !important;
+    --adw-headerbar-fg-rgb: 255, 255, 255 !important;
+    --adw-headerbar-border-rgb: 51, 70, 124 !important;
+    --adw-headerbar-backdrop-rgb: 0, 0, 0 !important;
+
+    --adw-sidebar-bg-rgb: 0, 0, 0 !important;
+    --adw-sidebar-fg-rgb: 255, 255, 255 !important;
+    --adw-sidebar-backdrop-rgb: 51, 70, 124 !important;
+
+    --adw-card-bg-rgb: 255, 255, 255 !important;
+    --adw-card-bg-a: 0.05 !important;
+    --adw-card-fg-rgb: 255, 255, 255 !important;
+
+    --adw-dialog-bg-rgb: 0, 0, 0 !important;
+    --adw-dialog-fg-rgb: 255, 255, 255 !important;
+
+    --adw-popover-bg-rgb: 0, 0, 0 !important;
+    --adw-popover-fg-rgb: 255, 255, 255 !important;
+}

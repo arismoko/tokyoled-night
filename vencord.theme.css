@@ -1,0 +1,64 @@
+/**
+ * @name TokyoLED Night
+ * @description A high-contrast, OLED-optimized Tokyo Night theme.
+ * @author Grey-007
+ * @version 1.0.0
+*/
+
+@import url('https://refact0r.github.io/system24/build/system24.css');
+
+body {
+    --font: 'JetBrainsMono Nerd Font';
+    --code-font: 'JetBrainsMono Nerd Font';
+    font-weight: 400;
+    --gap: 8px;
+    --divider-thickness: 2px;
+    --border-thickness: 1px;
+    --unrounding: on;
+    --ascii-titles: on;
+    --ascii-loader: system24;
+}
+
+:root {
+    --colors: on;
+
+    --text-1: #ffffff;
+    --text-2: #ffffff;
+    --text-3: var(--blue-1);
+    --text-4: #7aa2f7;
+    --text-5: #33467c;
+
+    --bg-1: #33467c;
+    --bg-2: #1a1b26;
+    --bg-3: #000000;
+    --bg-4: #000000;
+
+    --hover: rgba(122, 162, 247, 0.1);
+    --active: rgba(122, 162, 247, 0.2);
+    
+    --accent-1: var(--blue-1);
+    --accent-2: var(--blue-2);
+    --accent-3: var(--blue-1);
+    --accent-4: var(--blue-2);
+    --accent-5: #33467c;
+
+    --online: var(--green-2);
+    --dnd: var(--red-2);
+    --idle: var(--yellow-2);
+    --streaming: var(--purple-2);
+    --offline: var(--text-5);
+
+    --border: #33467c;
+    --border-hover: var(--blue-1);
+
+    --red-1: #ff9e64;
+    --red-2: #f7768e;
+    --green-1: #b9f27c;
+    --green-2: #9ece6a;
+    --blue-1: #7aa2f7;
+    --blue-2: #7da6ff;
+    --yellow-1: #e0af68;
+    --yellow-2: #e0af68;
+    --purple-1: #bb9af7;
+    --purple-2: #bb9af7;
+}
